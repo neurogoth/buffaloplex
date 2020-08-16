@@ -1,4 +1,8 @@
 #!/bin/sh
-wget http://www.buffalotech.com/support-and-downloads/download/cloudstor-firmware-build-1.13-2.35.zip
-wget http://buffalotech.com/support-and-downloads/download/ls_series-169.zip
-wget http://www.buffalotech.com/support-and-downloads/download/ls_series-171.zip
+#wget http://www.buffalotech.com/support-and-downloads/download/cloudstor-firmware-build-1.13-2.35.zip
+# new link for cloudstor fw below
+#wget http://3865dc10959fb7ba66fc-382cb7eb4238b9ee1c11c6780d1d2d1e.r18.cf1.rackcdn.com/cloudstor-firmware-build-1.13-2.35.zip
+#wget http://buffalotech.com/support-and-downloads/download/ls_series-169.zip
+#wget http://www.buffalotech.com/support-and-downloads/download/ls_series-171.zip
+# link below requires cookie etc. for download
+wget http://driver.asia.buffalo.jp/buf-drv2/secure/nas/win/ls_series-v174.zip
