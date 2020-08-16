@@ -1,15 +1,16 @@
 #!/bin/sh
 
-TRANSMISSION_VERSION=2.84
-OPENSSL_VERSION=0.9.8ze
-ZLIB_VERSION=1.2.3
-LIBCURL_VERSION=7.19.6
+TRANSMISSION_VERSION=3.00
+OPENSSL_VERSION=1.1.1g
+ZLIB_VERSION=1.2.11
+LIBCURL_VERSION=7.71.1
 
 #umount /opt 2> /dev/null
 #rm -rf /mnt/array1/.optware
 ln -s /mnt/array1 /mnt/disk1
 cd /root/optware-setup
 echo "You need to manually exit the sub-shell after optware is installed."
+# couldn't find a newer version of boostrap file
 sh ls-mvkw-bootstrap_1.2-7_arm.xsh
 rm /mnt/disk1
 mkdir /root/compiler
@@ -38,7 +39,7 @@ sed -i "s/^LIBCURL_VERSION=.*\$/LIBCURL_VERSION=$LIBCURL_VERSION/" ./make/libcur
 #make openssl
 #make zlib
 #make libcurl
-curl https://cloud.github.com/downloads/libevent/libevent/libevent-2.0.20-stable.tar.gz > ./downloads/libevent-2.0.20-stable.tar.gz
+curl https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz > ./downloads/libevent-2.1.12-stable.tar.gz
 #make libevent
 make transmission
 #Fix libcurl compiler error which I couldn't track properly yet...
