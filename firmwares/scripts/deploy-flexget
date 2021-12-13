@@ -5,8 +5,8 @@ test ! -d /etc/ssl && mkdir /etc/ssl
 test ! -f /etc/ssl/cert.pem && cp /etc/melco/fw_cert.crt /etc/ssl/cert.pem
 echo "Downloading Python source"
 # move to Python3
-wget-ssl --ca-certificate /etc/ssl/cert.pem https://www.python.org/ftp/python/3.8.5/Python-3.8.5.tgz
-tar -xzf Python-3.8.5.tgz
+wget-ssl --ca-certificate /etc/ssl/cert.pem https://www.python.org/ftp/python/3.10.1/Python-3.10.1.tgz
+tar -xzf Python-3.10.1.tgz
 
 echo "Custom firmware specific optware setup
 test ! -d /opt && mkdir /opt
@@ -21,7 +21,7 @@ echo "Quick update"
 ipkg update
 ipkg install gcc make binutils openssl-dev ncurses-dev libgcrypt zlib readline bzip2 gdbm
 
-cd Python-3.8.5
+cd Python-3.10.1
 export CFLAGS="-L/opt/lib"
 ./configure --prefix=/usr/local/flexget --enable-unicode=ucs4 --enable-shared LDFLAGS="-Wl,-rpath /opt/lib"
 #add to setup.py /opt/lib and /opt/include under detect_modules
@@ -52,7 +52,7 @@ test -f /tmp/bigtemptest && rm -f /tmp/bigtemptest && umount /tmp
 
 echo "Installing pip"
 export PYTHONUSERBASE=/usr/local/flexget
-cp /usr/local/flexget/lib/libpython3.8.so* /lib 
+cp /usr/local/flexget/lib/libpython3.10.so* /lib 
 
 /usr/local/bin/python3 get_pip.py --user
 
@@ -69,12 +69,12 @@ diff /root/python3pipadded /root/python3flexgetadded | sed -n '\,^+/usr, s/^+//p
 diff /root/python3files /root/python3flexgetadded | sed -n '\,^+/usr, s/^+//p' > /root/diffpythontoflexget
 
 cd /
-tar -cvzf /root/flexget.tgz usr/local/flexget lib/libpython3.8.so*
+tar -cvzf /root/flexget.tgz usr/local/flexget lib/libpython3.10.so*
 
 exit
 
 #If this was not restricted to /usr/local/flexget, then we'd need the below
-DST=/root/py38
+DST=/root/py310
 test ! -d $DST && mkdir $DST
 
 while read t
