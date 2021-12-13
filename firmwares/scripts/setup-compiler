@@ -24,6 +24,7 @@ ipkg install optware-devel openssl-dev libcurl-dev
 ipkg install perl-libwww perl-uri perl-encode-detect perl-http-response-encoding
 ipkg install xz-utils
 
+# TODO: SVN URL below no longer works
 svn co http://svn.nslu2-linux.org/svnroot/optware/trunk svn-cs08q1armel
 cd svn-cs08q1armel
 sed -i 's/ awk/ gawk/' Makefile
