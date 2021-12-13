@@ -3,5 +3,5 @@
 #wget http://buffalotech.com/support-and-downloads/download/nasnavi-279.dmg.zip
 #wget http://www.buffalotech.com/support-and-downloads/download/nasnavi-282.zip
 #wget http://www.buffalotech.com/support-and-downloads/download/nasnavi-282.dmg.zip
-# Latest version for MS Windows is 3.0.2 - download requires cookie
-wget http://driver.asia.buffalo.jp/buf-drv2/secure/nas/win/nasnavi-302.zip
+# Latest version for MS Windows is 3.0.4 - download requires cookie
+wget http://driver.asia.buffalo.jp/buf-drv2/secure/nas/win/nasnavi-304.zip
