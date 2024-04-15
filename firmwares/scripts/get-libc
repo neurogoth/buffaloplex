@@ -1,4 +1,4 @@
-wget http://ftp.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9-base_4.9.2-10+deb8u1_armel.deb
-wget http://ftp.debian.org/debian/pool/main/g/gcc-4.9/libgcc1_4.9.2-10+deb8u1_armel.deb
-wget http://ftp.debian.org/debian/pool/main/g/glibc/libc-bin_2.33-1_armel.deb
-wget http://ftp.debian.org/debian/pool/main/g/glibc/libc6_2.33-1_armel.deb
+wget http://ftp.debian.org/debian/pool/main/g/gcc-13/gcc-13-base_13.2.0-23_armel.deb
+wget http://ftp.debian.org/debian/pool/main/g/gcc-13/libgcc-13-dev_13.2.0-23_armel.deb
+wget http://ftp.debian.org/debian/pool/main/g/glibc/libc-bin_2.38-6_armel.deb
+wget http://ftp.debian.org/debian/pool/main/g/glibc/libc6_2.38-6_armel.deb
