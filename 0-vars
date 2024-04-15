@@ -6,8 +6,8 @@
 LINKSTATION=1
 
 if [ $LINKSTATION -eq 1 ]; then
-	VERSION=171
-	VERSIONDOT="1.71"
+	VERSION=175
+	VERSIONDOT="1.75"
 else
 	VERSION=113
 	VERSIONDOT="1.13"
@@ -20,7 +20,8 @@ fi
 #PLEXBIN=PlexMediaServer-0.9.11.4.739-a4e710f-arm.spk
 #PLEXBIN=PlexMediaServer-0.9.11.7.803-87d0708-arm.spk
 #PLEXBIN=PlexMediaServer-0.9.12.11.1406-8403350-arm.spk
-PLEXBIN=PlexMediaServer-0.9.12.19.1537-f38ac80-arm.spk
+#PLEXBIN=PlexMediaServer-0.9.12.19.1537-f38ac80-arm.spk
+PLEXBIN=PlexMediaServer-0.9.16.6.1993-5089475-arm.spk
 
 PLEX_GCC=gcc-4.7-base_4.7.2-5_armel.deb
 PLEX_LIBC=libc6_2.13-38+deb7u6_armel.deb
