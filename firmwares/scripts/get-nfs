@@ -1,4 +1,5 @@
 #!/bin/sh
 # Supposedly Unfs3 is obsolete and nfs-utils should be used instead
+# TODO: test https://bin.entware.net/armv5sf-k3.2/unfs3_0.9.23-20150511-1_armv5-3.2.ipk
 wget http://ipkg.nslu2-linux.org/feeds/optware/cs08q1armel/cross/stable/unfs3_0.9.22-1_arm.ipk
 wget http://ipkg.nslu2-linux.org/feeds/optware/cs08q1armel/cross/stable/portmap_4-5_arm.ipk
