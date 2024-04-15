@@ -3,4 +3,4 @@
 #wget https://downloads.plex.tv/plex-media-server/0.9.12.11.1406-8403350/PlexMediaServer-0.9.12.11.1406-8403350-arm.spk
 # Latest ever version released supporting the arch (0.9.16.6.1993-5089475)
 wget https://downloads.plex.tv/plex-media-server/0.9.16.6.1993-5089475/PlexMediaServer-0.9.16.6.1993-5089475-arm.bin
-# TODO: file above manually downloaded
+# TODO: file above manually downloaded already; URL doesn't work
