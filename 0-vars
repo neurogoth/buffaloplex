@@ -23,10 +23,10 @@ fi
 #PLEXBIN=PlexMediaServer-0.9.12.19.1537-f38ac80-arm.spk
 PLEXBIN=PlexMediaServer-0.9.16.6.1993-5089475-arm.spk
 
-PLEX_GCC=gcc-4.7-base_4.7.2-5_armel.deb
-PLEX_LIBC=libc6_2.13-38+deb7u6_armel.deb
-PLEX_LBIN=libc-bin_2.13-38+deb7u6_armel.deb
-PLEX_LIBGCC=libgcc1_4.7.2-5_armel.deb
+PLEX_GCC=gcc-13-base_13.2.0-23_armel.deb
+PLEX_LIBC=libc6_2.38-6_armel.deb
+PLEX_LBIN=libc-bin_2.38-6_armel.deb
+PLEX_LIBGCC=libgcc-13-dev_13.2.0-23_armel.deb
 
 SRC=./src
 FIRMWARES=./firmwares
@@ -56,13 +56,13 @@ TRANSMISSIONSTABLE_VERSION=2.77
 TRANSMISSIONLATEST_VERSION=2.84
 TRANSMISSIONCOMPILED=1
 
-OLDWIN=nasnavi-266.exe
+OLDWIN=nasnavi-311.exe
 OLDOSX=nasnavi-266.dmg.zip
-NASNAVIWIN=$FIRMWARES/nasnavi-282.zip
+NASNAVIWIN=$FIRMWARES/nasnavi-311.zip
 NASNAVIOSX=$FIRMWARES/nasnavi-282.dmg.zip
 
 #FLEXGETVERSION=1.2.271
-FLEXGETVERSION=1.2.349
+FLEXGETVERSION=3.11.27
 
 #This is only usable on my own machine - GaryT
 #FINALOUTPUTFULL=/media/sf_LinuxShare
